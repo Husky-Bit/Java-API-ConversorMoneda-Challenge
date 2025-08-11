@@ -1,18 +1,32 @@
-## Getting Started
+# Conversor de Moneda en Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este es un programa de consola en Java que convierte valores entre diferentes monedas utilizando datos en tiempo real de la API de ExchangeRate.
 
-## Folder Structure
+## Funcionalidad
+- Convierte entre USD, ARS, BRL y COP.
+- Muestra un menú con las opciones disponibles.
+- Consulta las tasas de cambio en internet y realiza el cálculo automáticamente.
 
-The workspace contains two folders by default, where:
+## Archivos principales
+- **App.java** → Clase principal con el menú y lógica del programa.
+- **ConsultaMoneda.java** → Clase que consulta la API y devuelve los datos.
+- **Moneda.java** → Record que contiene el objeto `ConversionRates`.
+- **ConversionRates.java** → Record con las tasas de cada moneda.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Ejemplo de uso
+```
+1) Dolar >>> Peso Argentino
+2) Peso Argentino >>> Dolar
+...
+Elija una opcion valida: 1
+Ingrese el monto en USD: 10
+El valor 10.0 [USD] corresponde a 8117.5 [ARS]
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Requisitos
+- Tener **Java 17** o superior.
+- Conexión a internet para acceder a la API.
+- La librería **Gson** agregada al proyecto.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+Challenge practico de programación en Java para AluraLATAM.
